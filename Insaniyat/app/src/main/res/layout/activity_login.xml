@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/darkblue"
+    android:layout_marginTop="1dp">
+
+    <EditText
+        android:layout_marginTop="200dp"
+        android:id="@+id/loginEmail"
+        style="@style/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/password"
+        style="@style/hint"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginSubmit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_border"
+        android:text="@string/login"
+        android:textColor="@color/white"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

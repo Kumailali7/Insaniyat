@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".BloodDonationFragment">
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/BloodList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkred"
+            android:dividerHeight="5.0sp"
+            style="@style/listItem">
+        </ListView>
+
+    </LinearLayout>
+
+</FrameLayout>

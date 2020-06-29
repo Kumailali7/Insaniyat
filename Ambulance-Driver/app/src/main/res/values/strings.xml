@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Insaniyat AmbulanceDriver</string>
+    <string name="signup_volunteer">Sign Up Driver</string>
+    <string name="signupUser">Driver Registration</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="signup">Sign up</string>
+    <string name="password">Password</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="login">Login</string>
+    <string name="loginUser">Driver Login</string>
+    <string name="insaniyat">Ambulance Driver</string>
+    <string name="access_token">pk.eyJ1IjoiYW5hc2ZhaXNhbCIsImEiOiJjazczYmJtMHkwN3g5M2xueDlxbG82ZTVvIn0.e-KxwYakh_da5eXKyiuuGA</string>
+    <string name="user_location_permission_explanation">Location required</string>
+    <string name="user_location_permission_not_granted">Location not granted</string>
+    <string name="title_activity_pop_up_window">PopUpWindow</string>
+    <string name="ok">Okay</string>
+    <string name="ride_notification">Ride Notification</string>
+    <string name="channel_name">Channel1</string>
+    <string name="channel_description">Channel1_Description</string>
+    <string name="insaniyatTitle">Insaniyat</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/darkblue"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:id="@+id/signupName"
+        style="@style/hint"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/signupPhone"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/phone"
+        style="@style/hint"
+        android:textColor="@color/white"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/email"
+        style="@style/hint"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/password"
+        style="@style/hint"
+        android:textColor="@color/white"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/signupSubmit"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border2"
+        android:text="@string/signup"
+        android:ems="10"
+        android:textColor="@color/white"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</LinearLayout>

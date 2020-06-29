@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:id="@+id/signupVolunteerName"
+        android:layout_gravity="center"
+        style="@style/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/signupVolunteerPhone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/phone"
+        style="@style/hint"
+        android:textColor="@color/white"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/signupVolunteerEmail"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/email"
+        style="@style/hint"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/signupVolunteerPassword"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:ems="10"
+        android:hint="@string/password"
+        style="@style/hint"
+        android:textColor="@color/white"
+        android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal">
+
+            <Spinner
+                android:id="@+id/signupVolunteerBloodGroupSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/headingBlack"
+                />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/signupVolunteerSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"
+        android:text="@string/signup"
+        android:ems="10"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.insaniyatambulancedriver">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_directions_bus_black_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" />
+        <activity
+            android:name=".PopUpWindow"
+            android:label="@string/title_activity_pop_up_window"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".LocationComponentActivity" />
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in" />
+
+        <service
+            android:name=".TheService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

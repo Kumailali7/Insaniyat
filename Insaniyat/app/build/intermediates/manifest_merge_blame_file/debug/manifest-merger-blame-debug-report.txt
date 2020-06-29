@@ -1,0 +1,219 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.android.insaniyat"
+4    android:versionCode="1"
+5    android:versionName="2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:5:5-79
+11-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:6:5-81
+12-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:7:5-67
+13-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.SEND_SMS" />
+14-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:8:5-66
+14-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15-->[com.mapbox.mapboxsdk:mapbox-android-navigation:0.42.6] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\94575014d40b94575c91590be7760eb3\jetified-mapbox-android-navigation-0.42.6\AndroidManifest.xml:11:5-77
+15-->[com.mapbox.mapboxsdk:mapbox-android-navigation:0.42.6] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\94575014d40b94575c91590be7760eb3\jetified-mapbox-android-navigation-0.42.6\AndroidManifest.xml:11:22-74
+16    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\87bb69199e175dfa780d7893c372da2d\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:5-79
+17-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\87bb69199e175dfa780d7893c372da2d\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:22-76
+18
+19    <uses-feature
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:9:5-11:35
+20        android:glEsVersion="0x00020000"
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:10:9-41
+21        android:required="true" />
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:11:9-32
+22    <uses-feature
+22-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:12:5-14:36
+23        android:name="android.hardware.wifi"
+23-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:13:9-45
+24        android:required="false" />
+24-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:14:9-33
+25
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:18:5-76
+26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\00e6bab76c12e3b44eb12491e1994517\jetified-mapbox-android-sdk-9.2.0\AndroidManifest.xml:18:22-73
+27    <uses-permission android:name="android.permission.WAKE_LOCK" />
+27-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:12:5-68
+27-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:12:22-65
+28
+29    <application
+29-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:10:5-36:19
+30        android:name="androidx.multidex.MultiDexApplication"
+31        android:allowBackup="true"
+31-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:11:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.1.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\448b01c3813d0ee722b9397804f55997\core-1.1.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:hardwareAccelerated="false"
+34-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:12:9-44
+35        android:icon="@drawable/icon2"
+35-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:13:9-39
+36        android:label="@string/app_name"
+36-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:14:9-41
+37        android:largeHeap="true"
+37-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:15:9-33
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:16:9-54
+39        android:supportsRtl="true"
+39-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:17:9-35
+40        android:theme="@style/AppTheme" >
+40-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:18:9-40
+41        <activity android:name="com.example.android.insaniyat.OpenMap" />
+41-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:19:9-54
+41-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:19:19-42
+42        <activity
+42-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:20:9-23:59
+43            android:name="com.example.android.insaniyat.HomeActivity"
+43-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:21:13-41
+44            android:label="@string/title_activity_home"
+44-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:22:13-56
+45            android:theme="@style/AppTheme.NoActionBar" />
+45-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:23:13-56
+46        <activity android:name="com.example.android.insaniyat.SplashActivity" >
+46-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:25:9-31:20
+46-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:25:19-49
+47            <intent-filter>
+47-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:26:13-30:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:27:17-69
+48-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:27:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:29:17-77
+50-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:29:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity android:name="com.example.android.insaniyat.SignupActivity" />
+53-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:33:9-52
+53-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:33:19-49
+54        <activity android:name="com.example.android.insaniyat.LoginActivity" />
+54-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:34:9-51
+54-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:34:19-48
+55        <activity android:name="com.example.android.insaniyat.MainActivity" />
+55-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:35:9-50
+55-->P:\8th_Semester\FYP-II\Projects\Insaniyat\app\src\main\AndroidManifest.xml:35:19-47
+56        <activity android:name="com.mapbox.services.android.navigation.ui.v5.MapboxNavigationActivity" />
+56-->[com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\4afec7a54cdc89efe3bfe4a7b81f5744\jetified-mapbox-android-navigation-ui-0.42.6\AndroidManifest.xml:10:9-106
+56-->[com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\4afec7a54cdc89efe3bfe4a7b81f5744\jetified-mapbox-android-navigation-ui-0.42.6\AndroidManifest.xml:10:19-103
+57
+58        <service android:name="com.mapbox.services.android.navigation.v5.navigation.NavigationService" />
+58-->[com.mapbox.mapboxsdk:mapbox-android-navigation:0.42.6] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\94575014d40b94575c91590be7760eb3\jetified-mapbox-android-navigation-0.42.6\AndroidManifest.xml:14:9-106
+58-->[com.mapbox.mapboxsdk:mapbox-android-navigation:0.42.6] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\94575014d40b94575c91590be7760eb3\jetified-mapbox-android-navigation-0.42.6\AndroidManifest.xml:14:18-103
+59
+60        <activity
+60-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+61            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+61-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+62            android:excludeFromRecents="true"
+62-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+63            android:exported="true"
+63-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+64            android:launchMode="singleTask"
+64-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+65            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+65-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+67
+68        <service
+68-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+69            android:name="com.google.firebase.components.ComponentDiscoveryService"
+69-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+70            android:directBootAware="true"
+70-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\e5655af3b8672df2962d83e9c30cdb69\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+71            android:exported="false" >
+71-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+72            <meta-data
+72-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+73                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+73-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\9262e0cb6e783e7b0bb1987d3de7949b\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\87bb69199e175dfa780d7893c372da2d\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
+76                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+76-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\87bb69199e175dfa780d7893c372da2d\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\87bb69199e175dfa780d7893c372da2d\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
+78        </service>
+79
+80        <provider
+80-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:18:9-22:39
+81            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+81-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:19:13-93
+82            android:authorities="com.example.android.insaniyat.mapboxtelemetryinitprovider"
+82-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:20:13-79
+83            android:exported="false"
+83-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:21:13-37
+84            android:initOrder="100" />
+84-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:22:13-36
+85
+86        <service
+86-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:24:9-26:72
+87            android:name="com.mapbox.android.telemetry.errors.ErrorReporterJobIntentService"
+87-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:25:13-93
+88            android:permission="android.permission.BIND_JOB_SERVICE" />
+88-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.1] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\09996d2e64bd2a21f2bc4f306fdcfd77\jetified-mapbox-android-telemetry-5.0.1\AndroidManifest.xml:26:13-69
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\0fd8b02d0d41f79009dd5fe87957b32a\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\0fd8b02d0d41f79009dd5fe87957b32a\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\0fd8b02d0d41f79009dd5fe87957b32a\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\0fd8b02d0d41f79009dd5fe87957b32a\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+94
+95        <provider
+95-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\e5655af3b8672df2962d83e9c30cdb69\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+96            android:name="com.google.firebase.provider.FirebaseInitProvider"
+96-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\e5655af3b8672df2962d83e9c30cdb69\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+97            android:authorities="com.example.android.insaniyat.firebaseinitprovider"
+97-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\e5655af3b8672df2962d83e9c30cdb69\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+98            android:exported="false"
+98-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\e5655af3b8672df2962d83e9c30cdb69\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+99            android:initOrder="100" />
+99-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\e5655af3b8672df2962d83e9c30cdb69\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+100
+101        <meta-data
+101-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\c721b48b5d7a9c297fcf8dfdbab35239\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+102            android:name="com.google.android.gms.version"
+102-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\c721b48b5d7a9c297fcf8dfdbab35239\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+103            android:value="@integer/google_play_services_version" />
+103-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\c721b48b5d7a9c297fcf8dfdbab35239\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+104
+105        <provider
+105-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\eaa4d0e4bf47c5d76724e22323460a05\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+106            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+106-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\eaa4d0e4bf47c5d76724e22323460a05\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+107            android:authorities="com.example.android.insaniyat.lifecycle-process"
+107-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\eaa4d0e4bf47c5d76724e22323460a05\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+108            android:exported="false"
+108-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\eaa4d0e4bf47c5d76724e22323460a05\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+109            android:multiprocess="true" />
+109-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\eaa4d0e4bf47c5d76724e22323460a05\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+110        <provider
+110-->[com.squareup.picasso:picasso:2.71828] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\59448f7b92c4ab27c0b2d1a6250f1a72\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+111            android:name="com.squareup.picasso.PicassoProvider"
+111-->[com.squareup.picasso:picasso:2.71828] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\59448f7b92c4ab27c0b2d1a6250f1a72\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+112            android:authorities="com.example.android.insaniyat.com.squareup.picasso"
+112-->[com.squareup.picasso:picasso:2.71828] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\59448f7b92c4ab27c0b2d1a6250f1a72\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+113            android:exported="false" />
+113-->[com.squareup.picasso:picasso:2.71828] C:\Users\Skuma\.gradle\caches\transforms-2\files-2.1\59448f7b92c4ab27c0b2d1a6250f1a72\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+114    </application>
+115
+116</manifest>
