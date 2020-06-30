@@ -10,7 +10,7 @@ Co-Supervisor : Murtuza Munawwar.
 
 Platform : Android 
 
-8 folders :
+7 folders :
   1)  Insaniyat (user android project)
   2)  Insaniyat Welfare Admin (welfare admin android project)
   3)  Insaniyat Volunteer (volunteer android project)
@@ -18,4 +18,3 @@ Platform : Android
   5)  APKs (containing all the apks)
   6)  PPT (Final Defense ppt)
   7)  Report (Final Defense Report)
-  8)  Video (Video submission)
